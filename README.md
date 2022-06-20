@@ -5,11 +5,15 @@ Let's talk about crowd source funding! So you want to create a play, and you hav
 
 It's an interesting paradigm that as much love and passion as people can have for the arts, not all endeavors to fund them are successful? Why do some efforts succeed and others fail? What can we learn from analyzing the outcomes of various attempts? And how might that analysis help us in future endeavors? Enter this analysis of kickstarter campaigns to shed some light on some of these questions. An analysis of almost four thousand kickstarter campaigns to fund various efforts around the globe reveal that musical theater fundraising efforts certainly can be successful. But a few key decisions along the way can help build an outline.
 
-![Crowd Funding Plays Success Rate](Crowd Funding Plays Success Rate.png)
+<p align="center">
+  <img src="https://github.com/cb19weber/kickstarter-analysis/blob/main/Crowd%20Funding%20Plays%20Success%20Rate.png" width="50%" />
+</p>
+  
+Fundraising campaigns involving theater in the United States have largely been successful three-quarters of the time they are launched. There is certainly an appetite and an appreciation among the populous for theater and plays that is demonstrated here.
 
-Fundraising campaigns for plays in Great Britain have been successful three-quarters of the time they are launched. There is certainly an appetite and an appreciation among the populous for plays that is demonstrated here.
-
-![Outcomes Based on Launch Date.png]
+<p align="center">
+  <img src="https://github.com/cb19weber/kickstarter-analysis/blob/main/Outcomes%20Based%20on%20Launch%20Date.png" />
+</p>
 
 Interestingly, something about late spring seems to stir the hearts of those who would pledge their hard-earned monies toward fundraising efforts. While the winter months don't show great success, funding campaigns launched around May or June seem to have the most success.
 
