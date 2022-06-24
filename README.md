@@ -24,7 +24,7 @@ But a deeper look must take into consideration the sample size for each period. 
 
 This analysis examined another potential variable correlation to kickstarter success by comparing outcomes based on the initial goals of the campain. The initial glimpse of the data and associated visualization here looks like things might be all over the map. But the sample size of campaigns with goal exceeding $10,000 is extremely limited. Exactly how limited? There were fewer kickstarter with goals exceeding $10,000 than there were in any of the smallest three goal buckets analyzed. So while it looks like things are all over the map, if the data were evaluated based simply on having an "over $10,000" bucket to capture all higher goal campaigns, there is a clear linear relationship between smaller fundraising goal and success rate.
 <p align="center">
-  <img src="https://github.com/cb19weber/kickstarter-analysis/blob/main/resources/Outcomes_vs_Goals.png" width="50%" />
+  <img src="https://github.com/cb19weber/kickstarter-analysis/blob/main/resources/Outcomes_vs_Goals.png" width="65%" />
 </p>
 The conclusion here is actually more of a challenge to potential playwrites and their dream of successfully funding their play. Keep your budget as tight for a real shot at meeting fundraising goals.
 
