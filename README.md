@@ -1,22 +1,37 @@
-# Some Analysis of Kickstarter Campaigns
-### Performing analysis on Kickstarter data to uncover trends for DU Data Module 1
+# Kickstarting with Excel
 
-Let's talk about crowd source funding! So you want to create a play, and you have in mind a vision to deliver something beautiful, thoughtful, and engaging. The outfits, the choreography, the scenes flowing from one dramatic portrayal to the next, the budget, the...wait. What? Yeah, the budget generate the same emotional response as the actual art. But it is crucial to making the vision a reality. Before all of the heart-felt applause and handing off of bouquets, some of those hearts and hands are going to need to donate some funds to get this thing off the ground.
+## Overview of Project
 
-It's an interesting paradigm that as much love and passion as people can have for the arts, not all endeavors to fund them are successful? Why do some efforts succeed and others fail? What can we learn from analyzing the outcomes of various attempts? And how might that analysis help us in future endeavors? Enter this analysis of kickstarter campaigns to shed some light on some of these questions. An analysis of almost four thousand kickstarter campaigns to fund various efforts around the globe reveal that musical theater fundraising efforts certainly can be successful. But a few key decisions along the way can help build an outline.
+The following analysis is meant to examine the relationships in crowd funding for theatrical plays. We will review data behind a variety of kickstarter crowd funding projects determine what made some efforts successful, and what pitfalls should be potentially avoided in order to reduce the odds of failure. 
 
+### Purpose
+
+The specific purpose of this analysis is to provide users of this information guidance on how to interpret the data from previous kickstarter endeavors. The goal is to take the data and create a meaningful interpretation that builds upon the raw data into something that sheds light on the important variables to consider in launching a kickstarter campaign.
+
+## Analysis and Challenges
+
+I performed analysis of the data in the kickstarter_challenge file by evaluating the tables correlating outcomes of kickstarter campaigns with the months that campaigns were launched and the original funding goals. One of the initial challenges with this module was creating the tables to correlate the data correctly. The analysis relies on accurate association of goals to outcomes. Another challenge, and probably more of a qualitative one, was to consider the population of outcomes in each bracket. Viable analysis can really only be trusted if there is a robust dataset with ample sample size to draw logical conclusions. In some of the correlation brackets of campaign goals to outcomes, the sample sizes are so small that the outcome analysis might be more suspect. 
+
+### Analysis of Outcomes Based on Launch Date
+
+An initial glimpse at the data and corresponding visualization indicates that the best time of year to launch a funding campaign is May, with a seemingly linear regression throughout the following months until around September when things bottom out. The outcomes of campaigns in May and through the "summer" months seem so outstandingly superior that further analysis might initially seem superfluous. But a deeper look must take into consideration the sample size for each period. 
 <p align="center">
-  <img src="https://github.com/cb19weber/kickstarter-analysis/blob/main/Crowd%20Funding%20Plays%20Success%20Rate.png" width="50%" />
+  <img src="https://github.com/cb19weber/kickstarter-analysis/blob/main/resources/Theater_Outcomes_vs_Launch.png" />
 </p>
-  
-Fundraising campaigns involving theater in the United States have largely been successful three-quarters of the time they are launched. There is certainly an appetite and an appreciation among the populous for theater and plays that is demonstrated here.
+But a deeper look must take into consideration the sample size for each period. May and June, respectively, have the most and second-most successful outcomes when correlated to launch date. But they also have the greatest amount of failures. There were more campaigns launched in these months than in other months, and so correlating the outcomes to the launch dates is more complicated than just choosing the month with the greatest successful outcomes. The gap between successful and failed outcomes by periodic launch date might give more relevant information. The greater quantitative difference between successful and failed campaigns depicts the success rate of those kickstarters. This validates that campaigns launched in May have the best odds of success. The success rate steadily declines after May until December when it is almost a 50/50 chance. Outside of December, the launch outcomes by period are actually closer than what initial evaluation might suggest, with most periods having a success rate around sixty to just under seventy percent. The conclusions to draw here are 1) don't launch a kickstarter campgain in December, and 2) the summer months may offer slightly higher odds of campaign success, but the outcomes will likely be on other variables.
 
+### Analysis of Outcomes Based on Goals
+
+This analysis examined another potential variable correlation to kickstarter success by comparing outcomes based on the initial goals of the campain. The initial glimpse of the data and associated visualization here looks like things might be all over the map. But the sample size of campaigns with goal exceeding $10,000 is extremely limited. Exactly how limited? There were fewer kickstarter with goals exceeding $10,000 than there were in any of the smallest three goal buckets analyzed. So while it looks like things are all over the map, if the data were evaluated based simply on having an "over $10,000" bucket to capture all higher goal campaigns, there is a clear linear relationship between smaller fundraising goal and success rate.
 <p align="center">
-  <img src="https://github.com/cb19weber/kickstarter-analysis/blob/main/Outcomes%20Based%20on%20Launch%20Date.png" />
+  <img src="https://github.com/cb19weber/kickstarter-analysis/blob/main/resources/Outcomes_vs_Goals.png" width="50%" />
 </p>
+The conclusion here is actually more of a challenge to potential playwrites and their dream of successfully funding their play. Keep your budget as tight for a real shot at meeting fundraising goals.
 
-Interestingly, something about late spring seems to stir the hearts of those who would pledge their hard-earned monies toward fundraising efforts. While the winter months don't show great success, funding campaigns launched around May or June seem to have the most success.
+### Challenges and Difficulties Encountered
 
-Plays specifically funded in the United States show some interesting trends. While having a vision for ornate backgrounds and stunning fashion can be initially attractive, analysis shows that most successful plays in the U.S. range within a fundraising goal of $1,500 to $5,000, with an about half of all fundraising efforts generating slightly under $3,200 per play. There seems to be a clear delineation between successful and failed campaigns related to overall capital goals. Whether consious or not, behavior of pledging seems to indicate an appreciation for plays that can produce on smaller budgets.
+I think some of the challenges of this dataset have already been highlighted in some of the analysis provided above, but two of the largest challenges worth mentioning here is the type of line graph that was chosen to visualize the outcomes against the launch dates and the expansive table selected to analyze the outcomes against various goal ranges. The visualization of the outcomes based on launch date makes it look like May and June are very clear winners for when to launch a campaign. When you actually evaluate the success rate, the difference between most months other than December is actually quite small, with the average being just around 62%. Additionally the definition and breakouts of the various goal ranges for the outcomes based on goals chart creates a visual that looks very disjointed. In reality, there are so few campaigns with goals greater than $10,000 that they really should all be grouped together rather than evaluated separately. When the table is altered this way, the success rate of campaigns exceeding $10,000 is only 46% and creates a much more reasonable visualization.
 
-Putting it all together, hopefully you can use this analysis to make your dream play into a reality. For those that succeed, the thunderous applause will be waiting when that curtain finally drops on a job well done. It wasn't all for the actors and actresses, but also for the hard work in budget, playwrite, and design to create something truly compelling for all of us.
+## Results
+
+I think the result of this analysis and module is really getting used to looking at your dataset and understanding it a bit before choosing how to organize and visualize the data. Chart visualizations can be extremely informational, but they can also be very misleading if based on information that isn't relevant or is heavily skewed by outliers.
